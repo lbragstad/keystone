@@ -17,6 +17,8 @@
 #    under the License.
 
 """Utility methods for working with WSGI servers."""
+import newrelic.agent
+newrelic.agent.initialize('/etc/keystone/newrelic.ini')
 
 import copy
 
